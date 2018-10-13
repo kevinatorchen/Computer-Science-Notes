@@ -699,9 +699,9 @@ distance = 20.0  # distance by which robot (intends to) move each iteratation
 
 # Uncomment the following three lines to run the online_slam routine.
 
-# data = make_data(N, num_landmarks, world_size, measurement_range, motion_noise, measurement_noise, distance)
-# result = online_slam(data, N, num_landmarks, motion_noise, measurement_noise)
-# print_result(1, num_landmarks, result[0])
+data = make_data(N, num_landmarks, world_size, measurement_range, motion_noise, measurement_noise, distance)
+result = online_slam(data, N, num_landmarks, motion_noise, measurement_noise)
+print_result(1, num_landmarks, result[0])
 
 ##########################################################
 
